@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@amirsed/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "handy library for certain functions on arrays",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/hyperamir/lotide.git"
   },
-  "author": "",
+  "author": "Amir Sedaghat <amir.sedaghat@gmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hyperamir/lotide/issues"
