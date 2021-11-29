@@ -21,10 +21,12 @@ const tail = function (array) {
   return output;
 };
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result, ["Lighthouse", "Labs"]);
+// const result = tail(["Hello", "Lighthouse", "Labs"]);
+// assertEqual(result, ["Lighthouse", "Labs"]);
 
-module.exports = tail;
-module.exports = assertEqual;
+module.exports = {
+  tail,
+  assertEqual
+}
 
 
