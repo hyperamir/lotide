@@ -1,7 +1,7 @@
 const assert = require('chai').assert;
 
 const { tail } = require('../tail');
-const { assertEqual } = require('../tail');
+//const { assertEqual } = require('../tail');
 
 describe('#tail', () => {
   it('returns ["Lighthouse", "Labs"] for ["Hello", "Lighthouse", "Labs"]', () => {
