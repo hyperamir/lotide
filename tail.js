@@ -12,7 +12,7 @@ const assertEqual = function (actual, expected) {
   return console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
 };
 
-//using slice instead of splice as we don't have to hange the original array
+//using slice instead of splice as we don't have to change the original array
 const tail = function (array) {
   let output = [];
   for (let i = 1; i < array.length; i++) {
@@ -23,5 +23,8 @@ const tail = function (array) {
 
 const result = tail(["Hello", "Lighthouse", "Labs"]);
 assertEqual(result, ["Lighthouse", "Labs"]);
+
+module.exports = tail;
+module.exports = assertEqual;
 
 
