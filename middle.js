@@ -1,18 +1,7 @@
-const eqArrays = function (arr1, arr2) {
-  if (arr1.length !== arr2.length) return false;
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) return false;
-  }
-  return true;
-}
-
-const assertArraysEqual = function (actual, expected) {
-  if (eqArrays(actual, expected)) {
-    return `✅✅✅ Assertion Passed: ${actual} === ${expected}`;
-  } else {
-    return `🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`;
-  }
-}
+// We don't need to require these two objects, as they've already
+//required in middletest: 
+//const eqArrays = require('./eqArrays')
+//const assertArraysEqual = require('./assertArraysEqual')
 
 const middle = function (arr) {
   let middleOfArr = [];
@@ -29,6 +18,4 @@ const middle = function (arr) {
   }
 };
 
-console.log(assertArraysEqual(middle([]), ([])));
-console.log(assertArraysEqual(middle([1, 2, 3, 4, 5]), ([3, 4])));
-console.log(assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), ([3, 4])));
+module.exports = middle;
